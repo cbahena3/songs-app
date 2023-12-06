@@ -9,8 +9,8 @@ class SongsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "create" do
-    assert_difference "Photo.count", 1 do
-      post "/photos.json", params: { name: "lake", width: 800, height: 600 }
+    assert_difference "Song.count", 1 do
+      post "/songs.json", params: { name: "lake", width: 800, height: 600 }
       assert_response 200
     end
   end
